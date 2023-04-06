@@ -1,21 +1,45 @@
-- name: Checkout target branch
-  uses: actions/checkout@v3
-  with:
-    ref: release
+name: Scheduled Merge from main to release
 
-- name: Checkout target branch
-  run: git checkout main
+on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: "Log level"
+        required: true
+        default: "warning"
+      tags:
+        description: "Test scenario tags"
 
-- name: Checkout target branch
-  run: git checkout release
+  schedule:
+    - cron: '* 1 * * 4'
 
-- name: Configuration Github Profile
-  run: |
-    git config --global user.email ${{ secrets.MYEMAIL }}
-    git config --global user.name ${{ secrets.MYNAME }}
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target branch
+        uses: actions/checkout@v3
+        with:
+          ref: main
 
-- name: Merge source branch
-  run: git merge  -Xtheirs main --allow-unrelated-histories
+      - name: Checkout target branch
+        uses: actions/checkout@v3
+        with:
+          ref: release
 
-- name: Push source branch
-  run: git push origin release
+      - name: Checkout target branch
+        run: git checkout main
+
+      - name: Checkout target branch
+        run: git checkout release
+
+      - name: Configuration Github Profile
+        run: |
+          git config --global user.email ${{ secrets.MYEMAIL }}
+          git config --global user.name ${{ secrets.MYNAME }}
+
+      - name: Merge source branch
+        run: git merge  -Xtheirs main --allow-unrelated-histories
+
+      - name: Push source branch
+        run: git push origin release
