@@ -38,6 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.37.0"],\
             ["eslint-config-next", "virtual:5808eb6088eebb665f891f91babce38256c18a37145db78ac01336e0952123de5e04b08c57b218b53a47fb0b36fb9291d505b80773d51996e38032661b72f5c6#npm:13.2.4"],\
             ["next", "virtual:5808eb6088eebb665f891f91babce38256c18a37145db78ac01336e0952123de5e04b08c57b218b53a47fb0b36fb9291d505b80773d51996e38032661b72f5c6#npm:13.2.4"],\
+            ["polished", "npm:4.2.2"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:5808eb6088eebb665f891f91babce38256c18a37145db78ac01336e0952123de5e04b08c57b218b53a47fb0b36fb9291d505b80773d51996e38032661b72f5c6#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A5.0.3#~builtin<compat/typescript>::version=5.0.3&hash=85af82"]\
@@ -2792,6 +2793,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.37.0"],\
             ["eslint-config-next", "virtual:5808eb6088eebb665f891f91babce38256c18a37145db78ac01336e0952123de5e04b08c57b218b53a47fb0b36fb9291d505b80773d51996e38032661b72f5c6#npm:13.2.4"],\
             ["next", "virtual:5808eb6088eebb665f891f91babce38256c18a37145db78ac01336e0952123de5e04b08c57b218b53a47fb0b36fb9291d505b80773d51996e38032661b72f5c6#npm:13.2.4"],\
+            ["polished", "npm:4.2.2"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:5808eb6088eebb665f891f91babce38256c18a37145db78ac01336e0952123de5e04b08c57b218b53a47fb0b36fb9291d505b80773d51996e38032661b72f5c6#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A5.0.3#~builtin<compat/typescript>::version=5.0.3&hash=85af82"]\
@@ -3114,6 +3116,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/picomatch-npm-2.3.1-c782cfd986-050c865ce8.zip/node_modules/picomatch/",\
           "packageDependencies": [\
             ["picomatch", "npm:2.3.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["polished", [\
+        ["npm:4.2.2", {\
+          "packageLocation": "./.yarn/cache/polished-npm-4.2.2-eb3d423b8d-97fb927dc5.zip/node_modules/polished/",\
+          "packageDependencies": [\
+            ["polished", "npm:4.2.2"],\
+            ["@babel/runtime", "npm:7.21.0"]\
           ],\
           "linkType": "HARD"\
         }]\
