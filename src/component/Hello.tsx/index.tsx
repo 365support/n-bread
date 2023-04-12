@@ -2,9 +2,9 @@ import React from "react";
 
 const Hello = ({ name, big }: any) => {
   if (big) {
-    return <h1>안녕하세요, {name}!</h1>;
+    return <h1>Hello, {name}</h1>;
   }
-  return <p>안녕하세요, {name}!</p>;
+  return <p>Hello</p>;
 };
 
 export default Hello;
