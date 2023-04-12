@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Hello from "@/component/Hello.tsx";
+import Hello from "@domains/Hello.tsx";
+import Button from "@domains/shared/components/atoms/Button";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hello />
+      <Button>버튼</Button>
     </>
   );
 }
