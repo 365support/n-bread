@@ -18,8 +18,8 @@
     "paths": {
       "@public/*": ["public/*"],
       "@pages/*": ["src/pages/*"],
-      "@domains/*": ["src/domains/*"],
       "@components/*": ["src/domains/shared/components/*"],
+      "@domains/*": ["src/domains/*"],
       "@utils/*": ["src/domains/shared/utils/*"],
       "@hooks/*": ["src/domains/shared/hooks/*"],
       "@constants/*": ["src/domains/shared/constants/*"]
