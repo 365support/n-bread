@@ -4,7 +4,7 @@ import { darken, parseToRgb } from "polished";
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: string;
-  size?: "lg" | "md" | "sm" | "xs";
+  size?: "lg" | "md" | "sm";
   variant?: "contained" | "outlined";
   rounded?: "md" | "lg" | "none";
   backgroundColor?: string;
@@ -68,27 +68,25 @@ const Button = ({
   const buttonSizeStyle = css`
     ${size === "lg" &&
     css`
-      width: ${fullWidth ? "100%" : "295px"};
+      padding: 8px 11px;
       height: 50px;
       font-size: 16px;
     `}
     ${size === "md" &&
     css`
-      width: ${fullWidth ? "100%" : "200px"};
+      padding: 6px 9px;
       height: 40px;
       font-size: 13px;
     `}
     ${size === "sm" &&
     css`
-      width: ${fullWidth ? "100%" : "145px"};
+      padding: 4px 5px;
       height: 30px;
       font-size: 11px;
     `}
-    ${size === "xs" &&
+    ${fullWidth &&
     css`
-      width: ${fullWidth ? "100%" : "44px"};
-      height: 30px;
-      font-size: 11px;
+      width: 100%;
     `}
   `;
 

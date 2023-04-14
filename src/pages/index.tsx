@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Hello from "@domains/Hello.tsx";
 import Button from "@components/atoms/button";
+import { css } from "@emotion/react";
 
 export default function Home() {
   return (
@@ -12,7 +13,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hello />
-      <Button variant="outlined" backgroundColor="#D4AA71">
+      <Button
+        variant="outlined"
+        backgroundColor="#D4AA71"
+        css={css`
+          width: 295px;
+        `}
+      >
         button
       </Button>
     </>
