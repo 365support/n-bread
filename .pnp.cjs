@@ -65,6 +65,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["polished", "npm:4.2.2"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:5808eb6088eebb665f891f91babce38256c18a37145db78ac01336e0952123de5e04b08c57b218b53a47fb0b36fb9291d505b80773d51996e38032661b72f5c6#npm:18.2.0"],\
+            ["react-merge-refs", "npm:2.0.1"],\
             ["storybook", "npm:7.0.2"],\
             ["styled-jsx", "virtual:5808eb6088eebb665f891f91babce38256c18a37145db78ac01336e0952123de5e04b08c57b218b53a47fb0b36fb9291d505b80773d51996e38032661b72f5c6#npm:5.1.2"],\
             ["typescript", "patch:typescript@npm%3A5.0.3#~builtin<compat/typescript>::version=5.0.3&hash=85af82"],\
@@ -13392,6 +13393,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["polished", "npm:4.2.2"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:5808eb6088eebb665f891f91babce38256c18a37145db78ac01336e0952123de5e04b08c57b218b53a47fb0b36fb9291d505b80773d51996e38032661b72f5c6#npm:18.2.0"],\
+            ["react-merge-refs", "npm:2.0.1"],\
             ["storybook", "npm:7.0.2"],\
             ["styled-jsx", "virtual:5808eb6088eebb665f891f91babce38256c18a37145db78ac01336e0952123de5e04b08c57b218b53a47fb0b36fb9291d505b80773d51996e38032661b72f5c6#npm:5.1.2"],\
             ["typescript", "patch:typescript@npm%3A5.0.3#~builtin<compat/typescript>::version=5.0.3&hash=85af82"],\
@@ -14887,6 +14889,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/react-is-npm-18.2.0-0cc5edb910-e72d0ba81b.zip/node_modules/react-is/",\
           "packageDependencies": [\
             ["react-is", "npm:18.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-merge-refs", [\
+        ["npm:2.0.1", {\
+          "packageLocation": "./.yarn/cache/react-merge-refs-npm-2.0.1-e038520c6a-c0b6fdb384.zip/node_modules/react-merge-refs/",\
+          "packageDependencies": [\
+            ["react-merge-refs", "npm:2.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
