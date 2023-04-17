@@ -1,10 +1,14 @@
 import Head from "next/head";
+import { useRef } from "react";
 import Hello from "@domains/Hello.tsx";
 import { css } from "@emotion/react";
 import Button from "@components/atoms/button";
 import FloatingButton from "@components/atoms/floatingButton";
+import Input from "@components/atoms/input";
 
 export default function Home() {
+  const inputRef = useRef<HTMLInputElement>(null);
+
   return (
     <div
       css={css`
@@ -40,6 +44,21 @@ export default function Home() {
       >
         button
       </FloatingButton>
+
+      <Input
+        type="password"
+        placeholder="hi"
+        ref={inputRef}
+        id="input1"
+        autoFocus
+      />
+      <Button
+        onClick={() => {
+          console.log(inputRef.current?.value);
+        }}
+      >
+        Input click
+      </Button>
     </div>
   );
 }
