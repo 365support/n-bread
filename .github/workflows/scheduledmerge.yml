@@ -11,7 +11,7 @@ on:
         description: "Test scenario tags"
 
   schedule:
-    - cron: '* 1 * * 4'
+    - cron: '* 1 * * 2,4'
 
 jobs:
   merge:
