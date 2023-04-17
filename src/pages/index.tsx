@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { useRef } from "react";
-import Hello from "@domains/Hello.tsx";
 import { css } from "@emotion/react";
 import Button from "@components/atoms/button";
 import FloatingButton from "@components/atoms/floatingButton";
@@ -24,7 +23,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hello />
       <Button
         variant="outlined"
         backgroundColor="#D4AA71"
