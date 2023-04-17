@@ -27,6 +27,7 @@
     "polished": "^4.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-merge-refs": "^2.0.1",
     "typescript": "5.0.3"
   },
   "packageManager": "yarn@3.5.0",
@@ -37,6 +38,7 @@
     "@babel/preset-typescript": "^7.21.4",
     "@babel/runtime": "^7.21.0",
     "@emotion/babel-plugin": "^11.10.6",
+    "@storybook/addon-actions": "^7.0.4",
     "@storybook/addon-essentials": "^7.0.2",
     "@storybook/addon-interactions": "^7.0.2",
     "@storybook/addon-links": "^7.0.2",
